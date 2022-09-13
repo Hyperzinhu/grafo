@@ -15,14 +15,34 @@
 
     <main>
         <div class="container">
+            <h1>Bem vindo ao meu programa!</h1>
+            <p>Escolha uma das opções abaixo:</p>
             <section class="input">
-                <label for="name_input">Nome:</label>
-                <input type="text" id="name_input">
-                <button id="name_button">ENVIAR</button>
+                <div class="input__item">
+                    <input type="radio" value="1" name="matrix-source" id="matrix-create">
+                    <label for="matrix-create">1. Criar matriz</label>
+                </div>
+                <div class="input__item">
+                    <input type="radio" value="2" name="matrix-source" id="matrix-verify">
+                    <label for="matrix-verify">2. Verificar palavra</label>
+                </div>
+                <div class="input__item">
+                    <input type="radio" value="3" name="matrix-source" id="matrix-show">
+                    <label for="matrix-show">3. Mostrar matriz</label>
+                </div>
+                <div class="input__item">
+                    <input type="radio" value="4" name="matrix-source" id="matrix-quit">
+                    <label for="matrix-quit">4. Sair do programa</label>
+                </div>
+                <button id="matrix-submit">ENVIAR</button>
             </section>
-            <section class="table">
-                <table id="table">
-                </table>
+            <section class="create">
+                <h2>Criar matriz</h2>
+                <p>Insira o tamanho da matriz:</p>
+                <div class="create__item">
+                    <input type="number" id="matrix-size" placeholder="Tamanho da matriz">
+                    <button id="">CRIAR</button>
+                </div>
             </section>
         </div>
     </main>
